@@ -52,7 +52,7 @@ body{
     margin-left: 102px;
     margin-top: 153px;
 }
- /* ------------- header part hover ------------------  */
+ /* ------------- header part HOVER ------------------  */
  .top-part:hover{
     background-color:white;
     box-shadow: 10px 10px 20px gainsboro;
@@ -81,7 +81,7 @@ body{
     grid-column-gap: 30px;
     grid-row-gap: 27px;
     /* margin-bottom: 150px; */
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 .player{
     width: 330px;
@@ -110,6 +110,76 @@ body{
     font-weight: normal;
     font-size: 16px;
 }
+/* ----------------------------------------------------------- */
+
+/* -------------- Livestreaming Styles ----------------  */
+
+.live-stream{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.live-text h3{
+    color:#18191F;
+    font-weight: bold;
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------------------------------------------- */
+
+/* -------------- Rating Styles ----------------  */
+
+.rating-part{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.rating-details{
+    width:300px;
+    box-shadow: 10px 10px 20px gainsboro;
+    padding: 15px;
+    border-radius: 10px;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+}
+.rating-details p{
+    color: #6C6C6C;
+    font-weight: normal;
+    font-size: 16px;
+}
+.rating{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.rating-text h3{
+    color:#18191F;
+    font-weight: bold;
+    font-size: 25px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color:#FFC014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+}
+
+/* ------------- rating part HOVER ------------------  */
+
+.rating-details:hover {
+    box-shadow: 10px 10px 30px #241e779a;
+    cursor:pointer;
+}
+
 /* ----------------------------------------------------------- */
 
 /* -------------- Footer Styles ----------------  */
@@ -148,6 +218,8 @@ body{
     font-size:18px;
     font-weight: normal;
 }
+
+/* ----------------------------------------------------------- */
 
 /* ----------- Media Queries ------------- */
 
@@ -210,39 +282,16 @@ body{
    .social-icon{
        margin-left:15px;
    }
+   .live-stream{
+       width:100%;
+   }
+   .live-video iframe{
+    width: 300px;
+    height: 200px;
+   }
 
 }
 
-/* ----------------------------------------------------------- */
+/* --------------- END ---------------- */
 
-/* -------------- Rating Styles ----------------  */
 
-.rating-part{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 150px;
-}
-.rating-details{
-    width:300px;
-    box-shadow: 10px 10px 20px gainsboro;
-    padding: 15px;
-    border-radius: 10px;
-    /* display:flex;
-    justify-content: center;
-    align-items: center; */
-}
-.rating{
-    display:flex;
-    align-items: center;
-    justify-content:space-between;
-}
-.fa-star{
-    font-size: 12px;
-}
-.fa-star.filled{
-    color:#FFC014;
-}
-.fa-star.empty{
-    color:#AEAEAE;
-}
