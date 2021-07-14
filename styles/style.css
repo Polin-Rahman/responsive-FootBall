@@ -80,7 +80,8 @@ body{
     grid-template-columns:repeat(3,1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
+    margin-bottom: 100px;
 }
 .player{
     width: 330px;
@@ -210,4 +211,38 @@ body{
        margin-left:15px;
    }
 
+}
+
+/* ----------------------------------------------------------- */
+
+/* -------------- Rating Styles ----------------  */
+
+.rating-part{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.rating-details{
+    width:300px;
+    box-shadow: 10px 10px 20px gainsboro;
+    padding: 15px;
+    border-radius: 10px;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+}
+.rating{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color:#FFC014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
 }
