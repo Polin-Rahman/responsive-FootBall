@@ -14,7 +14,6 @@ body{
 .top-part{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    /* display: flex; */
     height:677px;
     width:100%;
     background-color:#2D25A0;
@@ -53,9 +52,7 @@ body{
     margin-left: 102px;
     margin-top: 153px;
 }
- /* -----------------
-    header part hover
- --------------------  */
+ /* ------------- header part hover ------------------  */
  .top-part:hover{
     background-color:white;
     box-shadow: 10px 10px 20px gainsboro;
@@ -121,8 +118,6 @@ body{
     justify-content: center;
     align-items:center;
     margin-bottom: 20px;
-    /* margin-left: 457px; */
-    /* flex-direction: column; */
     
 }
  .football-img img{
@@ -151,4 +146,68 @@ body{
     color:#000000;
     font-size:18px;
     font-weight: normal;
+}
+
+/* ----------- Media Queries ------------- */
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px){
+    
+    .top-part, .players-blog{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+    .top-part{
+        /* width: 380px; */
+        width: 100%;
+        height: 695px;
+    }
+    .top-banner img, .top-title{
+        margin-left: 15px;
+    }
+    .top-banner img{
+        width: 329px;
+        height: 259.17px;
+        margin-top:50px;
+    }
+    .title{
+        width: 278px;
+        height: 138px;
+        margin-left: 16px;
+        margin-top: 112px;
+        margin-bottom:50px;
+    }
+    .top-title h1{
+        color:white;
+        font-weight: bold;
+        font-size: 36px;
+    }
+    .live-button{
+        width: 168px;
+        height: 44px;
+        background-color:#E02C6D;
+        padding: 10px, 24px, 10px, 24px;
+        margin-left: 19px;
+        margin-top: 280px;
+    }
+    .container{
+        margin-left: 5px;
+        padding: 5px;
+        /* width: 350px; */
+        width: 100%;
+    }
+   .player{
+    width: 320px;
+    height: 460px;
+   }
+   .footer-part{
+       width:100%;
+   }
+   .football-img img{
+       width:70%;
+   }
+   .social-icon{
+       margin-left:15px;
+   }
+
 }
